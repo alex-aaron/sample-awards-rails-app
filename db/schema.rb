@@ -10,10 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_18_002956) do
+ActiveRecord::Schema.define(version: 2021_06_21_215509) do
 
   create_table "categories", force: :cascade do |t|
-    t.integer "award_id"
+    t.integer "user_award_id"
     t.text "nominees"
     t.string "winner"
     t.datetime "created_at", precision: 6, null: false
