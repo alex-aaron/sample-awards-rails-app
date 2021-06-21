@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_21_220122) do
+ActiveRecord::Schema.define(version: 2021_06_21_220811) do
 
   create_table "categories", force: :cascade do |t|
     t.integer "user_award_id"
@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 2021_06_21_220122) do
 
   create_table "user_awards", force: :cascade do |t|
     t.integer "year"
-    t.integer "user_id"
+    t.integer "non_devise_user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
