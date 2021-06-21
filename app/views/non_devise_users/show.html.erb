@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @non_devise_user.username %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @non_devise_user.password %>
+</p>
+
+<%= link_to 'Edit', edit_non_devise_user_path(@non_devise_user) %> |
+<%= link_to 'Back', non_devise_users_path %>

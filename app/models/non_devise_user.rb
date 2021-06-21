@@ -1,0 +1,2 @@
+class NonDeviseUser < ApplicationRecord
+end

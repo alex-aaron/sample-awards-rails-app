@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Non Devise Users</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Username</th>
+      <th>Password</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @non_devise_users.each do |non_devise_user| %>
+      <tr>
+        <td><%= non_devise_user.username %></td>
+        <td><%= non_devise_user.password %></td>
+        <td><%= link_to 'Show', non_devise_user %></td>
+        <td><%= link_to 'Edit', edit_non_devise_user_path(non_devise_user) %></td>
+        <td><%= link_to 'Destroy', non_devise_user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Non Devise User', new_non_devise_user_path %>
